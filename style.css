@@ -1,0 +1,258 @@
+:root{
+    --background: #003049 ;
+    --text: #EAE2B7;
+    --hover-color:#F77F00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none; 
+    transition: .3s ease-out;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:linear-gradient(200deg, #7b2cbf,#3c096c);
+    border-radius: 5rem;
+}
+section{
+    background: var(--background);
+    padding: 5px;
+}
+.links{
+    margin-right: 40px;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 20px;
+}
+.links ul li a:hover{
+    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 17px;
+    background: linear-gradient(200deg, #7b2cbf,#3c096c);
+    border: none;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--text);
+}
+.btn a:hover{
+    color: var(--hover-color);
+}
+.frame{
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    background: transparent;
+    border: 10px solid #7b2cbf;
+    border-radius: 10px;
+    z-index: 1;
+}
+nav{
+    height: 70px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav .logo img{
+    height: 100px;
+    width: 100px;
+}
+nav .logo h1{
+    position: relative;
+    right: 30px;
+}
+nav .contact{
+    margin-right: 40px;
+}
+.Home{
+    margin-left:35px;
+    color: var(--text);
+    font-size: 70px;
+}
+.Home .text span{
+    font-size: 30px;
+}
+.Home .btn{
+    width: 200px;
+    height: 60px;
+}
+.about{
+    margin-top: 30px;
+    margin-left:35px;
+    display: flex;
+    padding: 50px;
+}
+.about .picture img{
+    position: relative;
+    height: 355px;
+    width: 400px;
+    z-index: 2;
+    border-radius: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.about .text{
+    margin-left: 100px;
+    color: var(--text);
+    font-size: 30px;
+}
+.about .text .body{
+    font-size: 25px;
+    margin-top: 25px;
+}
+.about .text .body button{
+    margin-top: 15px;
+}
+.portifolio{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--text);
+}
+.portifolio .links{
+    margin-top: 15px;
+    margin-left: 35px;
+}
+.portifolio .links a{
+    font-size: 25px;
+}
+.portifolio .projects{
+    margin-top: 20px;
+}
+.portifolio .projects .content{
+    display: flex;
+    padding: 50px;
+}
+.portifolio .projects .content .box img{
+    position: relative;
+    height: 355px;
+    width: 400px;
+    z-index: 2;
+    border-radius: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.portifolio .projects .content .info{
+    margin: 15px;
+}
+.portifolio .projects .content .info p{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.portifolio .projects .content .info p a{
+    text-decoration: none;
+    color: var(--text);
+    text-transform:uppercase;
+}
+.portifolio .projects .content .info p a:hover{
+    color: var(--hover-color);
+}
+.portifolio button{
+    width: 300px;
+    height: 60px;
+}
+.Services{
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text);
+    font-size: 30px;
+}
+.Services .container{
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 60px 200px;
+}
+.Services .container .card{
+    width: 500px;
+    height: 300px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 30px 1px;
+    border: 5px solid ;
+}
+.Services .container .card .card-img{
+    display: flex;
+    justify-content: center;
+}
+.Services .container .card .card-img h1{
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.Services .container .card .card-img img{
+    width: 80px;
+    height: 80px;
+}
+.Services .container .card .card-info{
+    font-size: 20px;
+    margin-top:10px;
+}
+.skills{
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text);
+    font-size: 30px;
+}
+.skills .list{
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto ;
+    gap: 60px 100px;
+}
+.skills .list .row img{
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+}
+.skills .list .row p{
+    margin-top: 10px;
+}
+.footer{
+    height: 100px;
+}
+.footer nav{
+    margin-top: 20px;
+}
+.footer nav p{
+    font-size: 20px;
+}
+.footer nav .btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.footer nav .btn i:hover{
+    cursor: pointer;
+    color: var(--hover-color);
+}
